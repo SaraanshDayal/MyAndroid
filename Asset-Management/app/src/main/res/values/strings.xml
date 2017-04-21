@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AssetManagement</string>
+    <string name="message">Swipe your card here</string>
+    <string name="error">Error</string>
+    <string name="no_nfc">No NFC found on this device</string>
+    <string name="nfc_disabled">NFC is not enabled. Please go to the wireless settings to enable it.</string>
+
+    <string-array name="asset_status">
+        <item>On Shelf</item>
+        <item>In Use</item>
+        <item>damaged</item>
+        <item>shared</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.a5013003452.assetmanagement.AllocateAssetActivity"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/box_asset_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        >
+
+        <TextView
+            android:id="@+id/asset_choose_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Choose Asset"
+            android:textSize="20sp"
+             />
+
+    <Spinner
+        android:id="@+id/asset_choose"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:layout_toRightOf="@id/asset_choose_text"
+        android:drawSelectorOnTop="true"
+        />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+    android:id="@+id/box_approve"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="0.2"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/asset_approve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Owner Approve"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/button_approve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Approve"
+            android:onClick="approveButtonActionListener"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/asset_approve"
+            android:layout_toEndOf="@+id/asset_approve"
+            android:layout_marginLeft="37dp"
+            android:layout_marginStart="37dp" />
+
+        <ImageView
+            android:id="@+id/allot_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/button_approve"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/box_allot"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/asset_allotee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allotee: "
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_alignBottom="@+id/allotee_name"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/allotee_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/textview_border"
+            android:hint="Allotee Name..."
+            android:layout_toRightOf="@+id/asset_allotee"
+            android:paddingTop="6dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="6dp"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginRight="90dp"
+            android:layout_alignBottom="@+id/button_allot" />
+
+        <Button
+            android:id="@+id/button_allot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Allot"
+            android:onClick="allotButtonActionListener"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="0dp"
+            android:layout_marginEnd="0dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/box_category"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        >
+
+    <TextView
+        android:id="@+id/category_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Category: "
+        android:textSize="20sp"
+        />
+
+    <Spinner
+        android:id="@+id/asset_category"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:layout_toRightOf="@id/category_text"
+        android:drawSelectorOnTop="true"
+        />
+</RelativeLayout>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="SAVE" />
+
+
+</LinearLayout>
