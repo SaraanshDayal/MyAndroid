@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOURCE"
+        android:textColor="@color/colorPrimaryDark"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:id="@+id/source_address"
+        android:background="@drawable/textview_border"/>
+
+    <Button
+        android:layout_marginTop="25dp"
+        android:id="@+id/button_origin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="search origin"
+        android:onClick="findSource"/>
+
+    <TextView
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DESTINATION"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:id="@+id/dest_address"
+        android:background="@drawable/textview_border"/>
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:id="@+id/button_dest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="search destination"
+        android:onClick="findDest"
+        />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="find route"
+        android:onClick="findroute"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
